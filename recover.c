@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
             break;
         }
 
-        // If not end of file, continue and check bytes 0-3 inclusive for JPG header.
+        // If not end of file, continue and check bytes 0-2 inclusive for JPG header.
         jpg_found = check_header(bytes);
 
         // If another JPG detected and there is a current file being written, close the file.
